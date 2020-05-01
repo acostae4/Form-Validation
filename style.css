@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    outline: none;
+}
+
+body{
+    background-color: #e2f3f5;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.container{
+    margin: 30px auto;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 65%;
+    height: 80vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.group label{
+    width: 210px;
+    font-size: 1.5rem;
+}
+
+.group input{
+    font-family: 'Baloo Tamma 2', cursive;
+    width: 450px;
+    border-radius: 10px;
+    border: 2px solid #c5e3f6;
+    font-size: 1.5rem;
+    padding: 8px;
+}
+
+i{
+    position: absolute;
+    float: right;
+    margin-left: 630px;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+button{
+    font-family: 'Baloo Tamma 2', cursive;
+    border: none;
+    background-color: #c5e3f6;
+    margin: 10px auto;
+    color: #000;
+    font-size: 2rem;
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #22d1ee;
+}
+#error-email,
+#error-password,
+#error-reenter{
+    align-self: center;
+    margin-left: 230px;
+    width: 400px;
+    word-wrap: break-word;
+    color: #cb3b3b;
+}
+.success{
+    border: 3px solid #a7ff83 !important;
+}
+
+.error{
+    border: 3px solid #cb3b3b !important;
+}
+
+@media only screen and (max-width: 1000px){
+    h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        height: 90vh;
+        width: 70%;
+    }
+    .group{
+        flex-direction: column;
+        margin: 0.6rem auto;
+    }
+    .group label{
+        align-self: flex-start;
+        width: 220px;
+    }
+    .group input{
+        width: 300px;
+        font-size: 1.2rem;
+    }
+    i{
+        position: absolute;
+        margin: 62px 0 0 125px;
+    }
+    button{
+        font-size: 1.5rem;
+        height: 50px;
+        width: 110px; 
+    }
+    #error-email,
+    #error-password,
+    #error-reenter{
+        margin: 0 auto;
+        word-wrap: break-word;
+        width: 280px;
+        color: #cb3b3b;
+}
+}
